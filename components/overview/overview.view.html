@@ -1,0 +1,29 @@
+<h1>{{overview.header}}</h1>
+
+<h2>User info:</h2>
+<div class="">
+    <p>
+        user name: {{overview.user.name}}
+    </p>
+    <p>
+        user email: {{overview.user.email}}
+    </p>
+    <p>
+        user age: {{overview.user.age}}
+    </p>
+</div>
+
+<h2>Products:</h2>
+
+<div ng-repeat="p in overview.products">
+    <p>
+        serial: {{p.serial}}
+    </p>
+    <p>
+        category: {{p.category}}
+    </p>
+    <p>
+        name: {{p.name}}
+    </p>
+    <br>
+</div>

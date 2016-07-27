@@ -1,0 +1,27 @@
+<h1>{{user.header}}</h1>
+
+<p>
+    name: {{user.userData.name}}
+</p>
+<p>
+    email: {{user.userData.email}}
+</p>
+<p>
+    age: {{user.userData.age}}
+</p>
+
+<input ng-model="user.newName" type="text" name="name" value="" placeholder="new name">
+<!-- <button ng-click="user.editName(user.newName)" type="button" name="button">change name</button> -->
+<button ng-click="user.editNameWrapper()" type="button" name="button">change name</button>
+<br>
+
+<input ng-model="user.newEmail" type="text" name="name" value="" placeholder="new email">
+<!-- <button ng-click="user.editEmail(user.newEmail)" type="button" name="button">change email</button> -->
+<button ng-click="user.editEmailWrapper()" type="button" name="button">change email</button>
+<br>
+
+<input ng-model="user.newAge" type="text" name="name" value="" placeholder="new age">
+<!-- <button ng-click="user.editAge(user.newAge)" type="button" name="button">change age</button> -->
+<button ng-click="user.editAgeWrapper()" type="button" name="button">change age</button>
+<br>
+<button ng-click="user.logState()" type="button" name="button">log state</button>

@@ -1,0 +1,17 @@
+[
+    {
+        "serial": "C-01",
+        "category": "camera",
+        "name": "EOS-50D"
+    },
+    {
+        "serial": "P-01",
+        "category": "printer",
+        "name": "pixma 5000"
+    },
+    {
+        "serial": "C-02",
+        "category": "camera",
+        "name": "EOS-70D"
+    }
+]

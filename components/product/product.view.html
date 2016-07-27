@@ -1,0 +1,27 @@
+<h1>{{product.header}}</h1>
+
+<!-- <div class="" ng-init="product.fetchProducts('/data/products.json')"> -->
+
+</div>
+
+<input ng-model="product.serial" type="text" name="name" value="" placeholder="serial">
+<input ng-model="product.category" type="text" name="name" value="" placeholder="category">
+<input ng-model="product.name" type="text" name="name" value="" placeholder="name">
+<button ng-click="product.addProduct({serial: product.serial, category: product.category, name: product.name})" type="button" name="button">add product</button>
+<button ng-click="product.logState()" type="button" name="button">log state</button>
+<button ng-click="product.fetchProducts('/data/products.json')" type="button" name="button">fetch</button>
+
+<div class="" ng-repeat="p in product.products">
+    <p>
+        serial: {{p.serial}}
+    </p>
+    <p>
+        category: {{p.category}}
+    </p>
+    <p>
+        name: {{p.name}}
+    </p>
+    <button ng-click="product.removeProduct(p.serial)" type="button" name="button">remove product</button>
+    <br>
+    <br>
+</div>
